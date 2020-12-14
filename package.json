@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/cypress run"
+    "test": "./node_modules/.bin/cypress run --record --key 5fb3e3b8-23d6-4606-9239-c99bab69363c"
   },
   "author": "Rojal Bati",
   "license": "ISC",
