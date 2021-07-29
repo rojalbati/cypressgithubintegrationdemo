@@ -16,7 +16,7 @@ jobs:
 
     strategy:
       matrix:
-        containers: [1, 2]
+        containers: [1, 2, 3]
         node-version: [12.x]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
@@ -27,5 +27,6 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
+    - run: yarn cypress info
     - run: npm ci
     - run: npm test
